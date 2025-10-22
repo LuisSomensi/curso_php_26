@@ -118,3 +118,63 @@ $mhDenominador = (1/ $prova1) + (1 / $prova2) + (1 / $prova3);
 $mediaHarmonica = round($quantidadeProvas / $mhDenominador, 2);
 echo "A média Harmonica é: $mediaHarmonica<br>";
 echo "<br> ";
+
+// Calcular o volume de uma esfera com raio 5cm
+//Dica :Elevar ao cubo -> 2 ** 3 = 8
+
+echo "Volume da esfera com um raio de 5cm <br>";
+$raio = 5;
+$raioCubo = 5 ** 3;
+$pi = 3.14;
+$fracao = 3/4;
+$volume = $fracao * $pi * $raioCubo;
+echo "<br> O volume é: $volume<br>";
+
+echo "<br>";
+echo "<br>";
+
+// Calcular a Área de um triângulo que tenha uma base de 8cm
+// E sua altura de 6cm
+
+echo "A área de um triângulo que tem uma base de 8 cm e uma altura de 6cm";
+$altura = 8;
+$base = 6;
+$area = ($base * $altura) / 2;
+echo "<BR> A área do triângulo é: $area";
+
+// Calcular IMC de uma Pessoa de Peso 80 kg
+//Altura de 1.8m
+echo "<br>";
+echo "<br>";
+echo "O IMC de uma pessoa de 80kg e 1.8 metros de altura<br>";
+$peso = 80;
+$altura = 1.8 ** 2;
+$IMC = round($peso / $altura, 2);
+echo "<br> o IMC dessa pessoa é de: $IMC<br>.";
+
+echo "<br>";
+echo "<br>";
+// Calcular quantos segundos tem em 2h e 30min
+echo "Calcular quantos segundos tem o tempo de 2h e 30min";
+$horapseg = 2 * 3600;
+$minpseg = 30 * 60;
+$segundos = $horapseg + $minpseg;
+echo "<br> 2h e 30min em segundos têm: $segundos<br>";
+
+// Converter  graus Celcius para Fahrenheit. 35ºC -> ?ºF
+$grausCelcius = 35;
+$Fahrenheit = ($grausCelcius * 1.8) + 32;
+echo "<br> 35º C convertidos para Fahreniheit é: $Fahrenheit";
+echo "<br>";
+echo "<br>";
+// Aplicar a formula de Bhaskara para a seguinte equação do segundo grau:
+// $a = 1 ; b = -3; $c = -4;
+echo "<br> Calcule a fórmula de Baskhara dado a= 1; b= -3; c= -4";
+$a = 1;
+$b = -3;
+$c = -4;
+
+$delta= $b **2 - 4 * $a * $c;
+$baskharax1 = (-$b + sqrt($delta)) / 2 * $a;
+$baskharax2 = (-$b - sqrt($delta)) / 2 * $a;
+echo "<br>  As raizes do caluculo de Baskhara é: $baskharax1 e $baskharax2 ";
