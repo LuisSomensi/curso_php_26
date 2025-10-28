@@ -127,7 +127,7 @@ $raio = 5;
 $raioCubo = 5 ** 3;
 $pi = 3.14;
 $fracao = 3/4;
-$volume = $fracao * $pi * $raioCubo;
+$volume = round( $fracao * $pi * $raioCubo, 2);
 echo "<br> O volume é: $volume<br>";
 
 echo "<br>";
@@ -178,3 +178,26 @@ $delta= $b **2 - 4 * $a * $c;
 $baskharax1 = (-$b + sqrt($delta)) / 2 * $a;
 $baskharax2 = (-$b - sqrt($delta)) / 2 * $a;
 echo "<br>  As raizes do caluculo de Baskhara é: $baskharax1 e $baskharax2 ";
+echo"<br>";
+echo"<br>";
+// Converter  Fahrenheit para Celsius. 90º -> ?
+$Fahrenheit;
+$grausCelcius = ($Fahrenheit - 32) / 1.8;
+echo "<br> 90º Fahrenheit convertidos para Celsius é: $grausCelcius";
+echo"<br>";
+// Converter  graus Kelvin para Celsius. 95º -> ?
+
+$grausk = 95;
+$grausCelsius = $grausk - 273;
+echo "<br> 95º Kelvin convertidos para Celsius é: $grausCelsius";
+echo"<br>";
+
+// Converter  graus Celsius para Kelvin. 35º -> ?
+$grausCelcius = 35;
+$grausk = $grausCelcius + 273;
+echo "<br> 35º Celsius convertidos para Kelvin é: $grausk";
+echo "<br>";
+// Converter  graus Celsius para Kelvin. x -> 35º
+$grausCelcius = 35;
+$grausCelcius = $grausk - 273;
+echo "<br> 35º Celsius convertidos para Kelvin é: $grausk";
