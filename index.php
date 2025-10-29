@@ -14,7 +14,9 @@ echo "A conta 10+15 ";
 $valor1 = 10;
 $valor2 = 15;
 $soma = $valor1 + $valor2; // 10 + 15 -> 25
+
 // mesma coisa
+
 //$soma = $soma+3; // 28
 $soma +=3; // 28
 
@@ -48,7 +50,11 @@ echo "<br>";
 echo "<br>";
 
 echo "TABUADA DO 5";
+
+
 // Tabuada 5
+
+
 $numero = 5;
 echo "<br>";
 echo "1 x $numero = " . $numero * 1 . "<br>";
@@ -62,9 +68,15 @@ echo "8 x $numero = " . $numero * 8 . "<br>";
 echo "9 x $numero = " . $numero * 9 . "<br>";
 echo "10 x $numero = " . $numero * 10 . "<br>";
 
+
 echo "<br>";
+
+
 echo "TABUADA DO 6";
+
 // Tabuada 6
+
+
 echo "<br>";
 $numero = 6;
 echo "1 x $numero = " . $numero * 1 . "<br>";
@@ -78,7 +90,9 @@ echo "8 x $numero = " . $numero * 8 . "<br>";
 echo "9 x $numero = " . $numero * 9 . "<br>";
 echo "10 x $numero = " . $numero * 10 . "<br>";
 
+
 //Aritmetica
+
 echo "<br> Aritmetica<br>";
 $valor1 = 10; 
 $valor2 = 20;
@@ -87,7 +101,9 @@ $valor3 = 30;
 $mediaAritmetica = ($valor1 + $valor2 + $valor3) / 3;
 echo "<br> Média Artmética: $mediaAritmetica<br>";
 
+
 //Ponderada
+
 echo "<br>Calcular a Média Ponderada.<br>";
 $prova1 = 10; //3
 $prova2 = 5; //1.5
@@ -107,6 +123,7 @@ echo "<br>";
 echo "<br>";
 echo "<br>";
 
+
 //Harmonica
 echo "<br>Calcular a Média Harmonica.<br>";
 $prova1 = 2;
@@ -119,21 +136,27 @@ $mediaHarmonica = round($quantidadeProvas / $mhDenominador, 2);
 echo "A média Harmonica é: $mediaHarmonica<br>";
 echo "<br> ";
 
+
 // Calcular o volume de uma esfera com raio 5cm
+
+
 //Dica :Elevar ao cubo -> 2 ** 3 = 8
 
 echo "Volume da esfera com um raio de 5cm <br>";
 $raio = 5;
 $raioCubo = 5 ** 3;
-$pi = 3.14;
-$fracao = 3/4;
-$volume = round( $fracao * $pi * $raioCubo, 2);
+CONST PI = 3.14;
+$fracao = 4/3;
+$volume = round( $fracao * PI * $raioCubo, 2);
 echo "<br> O volume é: $volume<br>";
 
 echo "<br>";
 echo "<br>";
 
+
 // Calcular a Área de um triângulo que tenha uma base de 8cm
+
+
 // E sua altura de 6cm
 
 echo "A área de um triângulo que tem uma base de 8 cm e uma altura de 6cm";
@@ -142,7 +165,10 @@ $base = 6;
 $area = ($base * $altura) / 2;
 echo "<BR> A área do triângulo é: $area";
 
+
 // Calcular IMC de uma Pessoa de Peso 80 kg
+
+
 //Altura de 1.8m
 echo "<br>";
 echo "<br>";
@@ -154,21 +180,29 @@ echo "<br> o IMC dessa pessoa é de: $IMC<br>.";
 
 echo "<br>";
 echo "<br>";
+
+
 // Calcular quantos segundos tem em 2h e 30min
+
 echo "Calcular quantos segundos tem o tempo de 2h e 30min";
 $horapseg = 2 * 3600;
 $minpseg = 30 * 60;
 $segundos = $horapseg + $minpseg;
 echo "<br> 2h e 30min em segundos têm: $segundos<br>";
 
+
 // Converter  graus Celcius para Fahrenheit. 35ºC -> ?ºF
+
 $grausCelcius = 35;
 $Fahrenheit = ($grausCelcius * 1.8) + 32;
 echo "<br> 35º C convertidos para Fahreniheit é: $Fahrenheit";
 echo "<br>";
 echo "<br>";
+
+
 // Aplicar a formula de Bhaskara para a seguinte equação do segundo grau:
-// $a = 1 ; b = -3; $c = -4;
+
+    // $a = 1 ; b = -3; $c = -4;
 echo "<br> Calcule a fórmula de Baskhara dado a= 1; b= -3; c= -4";
 $a = 1;
 $b = -3;
@@ -180,11 +214,16 @@ $baskharax2 = (-$b - sqrt($delta)) / 2 * $a;
 echo "<br>  As raizes do caluculo de Baskhara é: $baskharax1 e $baskharax2 ";
 echo"<br>";
 echo"<br>";
+
+
 // Converter  Fahrenheit para Celsius. 90º -> ?
 $Fahrenheit;
 $grausCelcius = ($Fahrenheit - 32) / 1.8;
 echo "<br> 90º Fahrenheit convertidos para Celsius é: $grausCelcius";
+
 echo"<br>";
+
+
 // Converter  graus Kelvin para Celsius. 95º -> ?
 
 $grausk = 95;
@@ -192,12 +231,38 @@ $grausCelsius = $grausk - 273;
 echo "<br> 95º Kelvin convertidos para Celsius é: $grausCelsius";
 echo"<br>";
 
+
 // Converter  graus Celsius para Kelvin. 35º -> ?
 $grausCelcius = 35;
 $grausk = $grausCelcius + 273;
 echo "<br> 35º Celsius convertidos para Kelvin é: $grausk";
 echo "<br>";
+
+
 // Converter  graus Celsius para Kelvin. x -> 35º
 $grausCelcius = 35;
 $grausCelcius = $grausk - 273;
 echo "<br> 35º Celsius convertidos para Kelvin é: $grausk";
+
+echo "<br>";
+echo "<br>";
+
+
+
+$tehodinheiro = true;
+$tenhovontadedetomarcafe= false;
+
+if ($tehodinheiro && $tenhovontadedetomarcafe)
+{
+    $xyz =20;
+    echo "vou tomar café<br>";
+}
+else if ($tehodinheiro && !$tenhovontadedetomarcafe) {
+    echo "vou comprar chocolate<br>";
+}
+
+else {
+    echo "não tenho vontade de nada<br>";
+}
+
+$soma = 10 + 10;
