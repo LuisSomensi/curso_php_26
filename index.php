@@ -266,3 +266,83 @@ else {
 }
 
 $soma = 10 + 10;
+
+/*simular o funcionamento de uma calculadora
+utilizar if, else if else.
+Operadores + - * /
+dica: $operador.
+*/
+
+echo "<br>";
+echo "<br>";
+
+$operador = "-";
+$valor1 = 2;
+$valor2 = 6;
+
+if ($valor1 < $valor2){
+    $temporario = $valor1;
+    $valor1 = $valor2;
+    $valor2 = $temporario;
+}
+
+// if valor1 < valor2 inferte
+if($operador == "+"){
+    $soma = $valor1 + $valor2; 
+    echo "A soma de $valor1 $operador $valor2 = $soma";
+    echo "<br>";
+}else if ($operador == "-"){
+    $subtração = $valor1 - $valor2; 
+    echo "A subtranção de $valor1 $operador $valor2= $subtração";
+    echo "<br>";
+}else if($operador == "*"){
+    $multiplicação = $valor1 * $valor2; 
+    echo "A muliplicação de $valor1 $operador $valor2= $multiplicação";
+    echo "<br>";
+}else if($operador == "/"){
+    $divisao = round($valor1 / $valor2 ,2); 
+    echo "A divisão de $valor1 $operador $valor2 = $divisao ";
+    echo "<br>";
+}   
+
+echo "<br>";
+
+//Página 15 exercício 8
+
+echo "<br>Calcular a Média Ponderada com base nas notas do aluno a seguir: 10, 5 e 4.<br>";
+$prova1 = 10; 
+$prova2 = 5; 
+$prova3 = 4; 
+
+
+$peso1 = 3;
+$peso2 = 3;
+$peso3 = 4;
+
+$mpNumerador = ($prova1 * $peso1) + ($prova2 * $peso2) + ($prova3 * $peso3);
+$mpDenominador = $peso1 + $peso2 +$peso3;
+
+$media = $mpNumerador/$mpDenominador;
+if ($media >= 6){
+    echo "O aluno foi aprovado com a média de: $media";
+}
+else{
+    echo "O aluno foi reprovado, pois ficou com a média de: $media";
+}
+
+echo "<br>";
+echo "<br>";
+
+$nome = "Luís";
+$idade = 15;
+
+if($idade >=18){
+    echo "$nome é de maior";
+
+}
+else{
+    echo "$nome é de menor";
+}
+
+echo "<br>";
+echo "<br>";
