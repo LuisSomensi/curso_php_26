@@ -346,3 +346,11 @@ else{
 
 echo "<br>";
 echo "<br>";
+
+$numero = 2;
+if ($num %2 == 0){
+    echo "par";
+
+}else{
+    echo "impar";
+}
