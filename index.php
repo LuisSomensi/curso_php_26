@@ -348,9 +348,112 @@ echo "<br>";
 echo "<br>";
 
 $numero = 2;
-if ($num %2 == 0){
+if ($numero %2 == 0){
     echo "par";
 
 }else{
     echo "impar";
 }
+
+echo "<br>";
+echo "<br>";
+
+for ($a = 0; $a < 10; $a++){
+    echo "<br>";
+    echo "O número é $a";
+}
+
+echo "<br>";
+echo "<br>";
+
+for ($a = 1; $a <= 10; $a++){
+    echo "<br>";
+    echo "O número é $a";
+}
+
+echo "<br>";
+echo "<br>";
+$numero = 5;
+echo "tabuada do $numero";
+
+echo "<br>";
+echo "<br>";
+
+
+for ($contar = 0; $contar <= 10; $contar++){
+    $restoDivisao = $contar % 2;
+    $ehDivisaoExata = $restoDivisao == 0;
+
+    echo "<br>";
+
+    // echo "$numero X $contar = " . $numero * $contar;
+
+    if ($restoDivisao) {
+        echo "$contar é par";
+    
+    } else {
+        echo "$contar é impar";
+    }
+
+
+        
+    }
+
+
+   echo "<br>";
+   echo "<br>";
+
+for ($contar = 0; $contar <= 10; $contar++){
+    if ($contar == 5){
+        continue;
+    }
+
+    echo "<br>";
+}
+
+//exibir os numeros pares ate 50
+
+//exibir os numeros em ordem decrescnte de 10 - 0
+
+//Calcular o ftorial de um numero, ex de 5 = 120
+$contPares = 0;
+
+for ($contar = 0; $contar <= 50; $contar++){
+    $restoDivisao = $contar % 2;
+    $ehDivisaoExata = $restoDivisao == 0;
+
+   if ($restoDivisao == 0) {
+        echo "$contar é par";
+        $contPares++;
+            echo "<br>";
+    }
+
+    if ($contPares == 50){
+        break;
+    }
+        
+} 
+echo "<br>";
+echo "<br>";
+
+//2
+
+for ($contar = 10; $contar >= 0; $contar--){
+    echo "<br>";
+    echo "em ordem decrescente de 0 a 10 os números são $contar"; echo "<br>";
+}
+
+echo "<br>";
+echo "<br>";
+
+
+echo "calcular fatoria do 5";
+
+echo "<br>";
+
+$numero = 5;
+
+for ($fatorial = $numero-1; $fatorial >= 1; $fatorial--){
+    $numero *= $fatorial;
+}
+echo "o fatorial de 5 tem valor de $numero";
