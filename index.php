@@ -457,3 +457,98 @@ for ($fatorial = $numero-1; $fatorial >= 1; $fatorial--){
     $numero *= $fatorial;
 }
 echo "o fatorial de 5 tem valor de $numero";
+
+echo "Contar e Exibir os numeros pares de 1 até 50 <br><br>";
+
+$pares = 1;
+
+while ($pares <= 50){
+    $pares = $pares + 1;
+    if ($pares % 2 <> 0){
+        continue;
+    }
+    echo "<br>";
+     echo "Os números são $pares";
+}
+
+echo "<br>---<br><br>";
+
+// Exibir os numeros em ordem DECRESCENTE de 0 à 10
+
+echo "Exibir os numeros em ordem DECRESCENTE de 0 à 10<br><br>";
+
+$num = 10;
+
+while ($num >= 0){
+    echo "<br>";
+    echo "Os números são $num";
+    $num--;
+}
+
+echo "<br>---<br><br>";
+
+echo "Calcular fatorial de do numero cinco<br>";
+
+$num = 5;
+$fator = $num -1;
+echo "o fatorial de 5 é: $fator <br>---<br><br>";
+//calcular fatorial de um numero
+
+echo "Calcular fatorial de do numero seis<br>";
+
+$num = 6;
+$fator = $num -1;
+
+while ($fator >= 1){
+    $num *= $fator;
+     $fator = $fator - 1;
+}
+echo "<br>A fatoração é igual à: $>um<br>---<b<br>";
+
+$fatorial =5;
+$antecessor = $fatorial -1;
+$numero = $antecessor;
+
+while ($fator >= 1){
+    $fatorial *= $numero; 
+    $numero --;
+    echo "O fatorial de 5 é igual a $fatorial";
+
+} //FIM
+
+do{
+    $fatorial *= $numero;
+    $numero--;
+}while($numero >= 1);
+echo "<br>---<br><br>";
+//ENCONTRAR OS 5 PRIMEIROS NUMEROS PRIMOS
+
+echo "encontrar os 5 primeiros números primos";
+$contPrimos = 0;
+$numeroAvaliado = 7;
+$antecessor = $numeroAvaliado --;
+$contDivisores = 0;
+
+for ( $divisor = 2; $divisor <= $antecessor; $divisor++){
+    $restoDivisao =$numeroAvaliado % $divisor;
+    $ehDivisaoExata = $restoDivisao == 0;
+
+    if ($ehDivisaoExata) {
+        $numeroAvaliado++;
+        $antecessor = $numeroAvaliado --;
+        continue;
+    }
+
+    if ($divisor == $ntecessor) {
+        echo "O número $numeroAvaliado é primo <br>" ; 
+        $numeroAvaliado++;
+        $antecessor = $numeroAvaliado --;
+        $contPrimos++;
+        $antecessor = $numeroAvaliado --;
+    }
+
+
+    if ($contPrimos = 5){
+        break;
+    }
+}
