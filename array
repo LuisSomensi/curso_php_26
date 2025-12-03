@@ -1,0 +1,113 @@
+<?php
+
+/*Tipos Primitivos
+Int | Integer == 1, 2, 3....
+Float | Double == 1.0, 2.0, 3.0....
+String | Char-Character == "Oi", 'o'...
+*/
+
+
+//Tipos compostos|coleção de dados: Array | Vetor
+
+$numeros = array(); //array vazio
+$numeros = []; //array vazio
+
+$numeros = [10, 11, 12, 20.99, "infoserv"]; // Tam:5
+//           0   1   2     3        4
+
+for($i = 0; $i <5; $i++){
+    echo $numeros[$i] . "<br>";
+}
+
+echo "<br>";
+
+print_r ($numeros);         //só quando der B.O
+
+
+echo "<br>";
+echo "<br>";
+
+
+var_dump($numeros);         //só quando der B.O
+
+echo "<br>";
+echo "<br>";
+
+ echo implode("<br>", $numeros);
+
+
+echo "<br>";
+echo "<br>";
+
+
+ //fazer com o while e o do while
+
+
+echo "<br>mesma ativide com o while <br>";
+$i = 0;
+$numeros = [10, 21, 32, 43, 54, 65];
+
+while ($i <6){                          //em quanto nao chegar em 5adiciona+1
+    echo $numeros [$i] . "<br>";
+    $i++;
+}
+
+"<br>";
+"<br>";
+
+$i = 0;
+
+echo "<br>mesma atividde com o do while <br>";
+
+do {                                  //
+    echo $numeros [$i] . "<br>";
+    $i++;
+}while ($i <6);
+
+"<br>";"<br>";
+
+//SALVAR OS NUMEROPRIMOS ENCONTRADOSEMUM ARRAY
+//APOS TER ENCONTRADO OS 5 PRIMOS,EM UM FOR EXIBA-OS
+
+"<br>";
+"<br>";
+"<br>";
+
+echo "Os 5 primeiros numeros primos são:  <br>";
+
+$contadorDeNumPrimos = 0;
+$contadorDeDivisores = 0;
+$primoOuNao = 5;
+$antecessor = $primoOuNao -1;
+
+$contadorDeNumPrimos = 0;
+$primosV= [];
+for ($primoOuNao = 3; $contadorDeNumPrimos < 5; $primoOuNao++) {
+
+    $antecessor = $primoOuNao -1;
+    $ehPrimo = true;
+
+    for($divisor = 2; $divisor <= $antecessor; $divisor++) {
+
+        $restoDaDivisao = $primoOuNao % $divisor;
+        $ehDivisaoExata = $restoDaDivisao == 0;
+
+        if ($ehDivisaoExata) {
+            $ehPrimo = false;
+            break;
+        }
+    }
+
+    if ($ehPrimo == true){
+        $primosV[] = $primoOuNao;
+        $contadorDeNumPrimos++;
+    }
+
+}
+
+$i = 0;
+"<br>";
+while ($i <5){                          //em quanto nao chegar em 4 adiciona +1
+    echo $primosV [$i] . "<br>";
+    $i++;
+}
