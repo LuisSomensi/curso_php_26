@@ -111,3 +111,24 @@ while ($i <5){                          //em quanto nao chegar em 4 adiciona +1
     echo $primosV [$i] . "<br>";
     $i++;
 }
+
+/**
+ * Somar Arrays
+ * $arrayInicio = [5, 10, 50]
+ * $arrayFim = [10, 90, 30]
+ * Resultado: $arraySoma [15, 100, 80]
+ */
+
+$arraySoma = [];
+$arrayInicio = [5,10, 50];
+$arrayFim = [10, 90, 30];
+
+for($i = 0; $i <3; $i++){
+    $arraySoma[$i] = $arrayInicio[$i] + $arrayFim[$i];
+}
+
+echo "<br>";
+echo "<br>";
+
+
+echo implode(",", $arraySoma );
