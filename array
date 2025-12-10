@@ -132,3 +132,78 @@ echo "<br>";
 
 
 echo implode(",", $arraySoma );
+
+/**
+ * Dada uma palavra informada pelo usuario,
+ * verificar se a mesma forma um álíndromo
+ * Ex.: ana, subi no onibus, kaiak, natan
+ * Dica: Um for dentro do outro
+ */
+
+
+echo"<br>";
+echo"<br>";
+
+echo "<br> Palíndromo: <br>";
+
+$palavra = "burro";
+
+$ehPalindromo = true;
+$tam = strlen($palavra);
+
+for($i = 0; $i < 5; $i++){
+    
+    $letraIndo[] = $palavra[$i];
+
+    $tamanhoVolta = $tam -$i;
+
+    for($j = $tam -1; $j >= 0; $j--){
+        $letraVoltando = $palavra[$j];
+
+        $saoIguais = $letraIndo == $letraVoltando;
+
+        if (!$saoIguais) {
+            $ehPalindromo = false;
+            break;
+        }
+    }
+    
+    if ($i < $tam) {
+        $ehPalindromo = true;   
+    }
+}
+
+
+if ($ehPalindromo) {
+    echo "O nome $palavra é um palíndromo.";
+}else {
+    echo "A palavra $palavra não é um palíndromo";
+}
+
+
+echo "<br><br>";
+$palavra = "neen";
+$quantidadeDeLetras = strlen($palavra);
+$UmMenos = $quantidadeDeLetras - 1;
+$testeIndo = [];
+$testeVoltando = [];
+
+
+for ($i = 0; $i < $quantidadeDeLetras; $i++){
+
+    $testeIndo[] = $palavra[$i];
+}
+
+for ($j = $UmMenos; $j >= 0; $j = $j - 1){
+
+    $testeVoltando[] = $palavra[$j];
+}
+
+$ehigual = $testeIndo == $testeVoltando;
+
+if ($ehigual){
+    echo "É Palindromo a palavra: $palavra";
+} else{
+    echo "Não é palindromo a palavra: $palavra";
+}
+echo "<br>";
