@@ -207,3 +207,17 @@ if ($ehigual){
     echo "Não é palindromo a palavra: $palavra";
 }
 echo "<br>";
+
+/**
+*Contar quantas vogais existem em uma frase
+*
+*Ex.: $palavra: "infoserv"
+*
+*Saída esperada: 3
+*Dica: $vogalMinuscula =strlower($palavras[$i]);
+*$vogais = [a, e, i, o, u]
+*in_array()
+*$existeVogl = in_array($vogalMinuscula, $vogais);
+*
+*Contar quais vogais existem em uma frase totalizando a quantidade de cada um
+*/
