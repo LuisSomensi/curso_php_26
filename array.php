@@ -146,39 +146,8 @@ echo"<br>";
 
 echo "<br> Palíndromo: <br>";
 
-$palavra = "burro";
-
-$ehPalindromo = true;
-$tam = strlen($palavra);
-
-for($i = 0; $i < 5; $i++){
-    
-    $letraIndo[] = $palavra[$i];
-
-    $tamanhoVolta = $tam -$i;
-
-    for($j = $tam -1; $j >= 0; $j--){
-        $letraVoltando = $palavra[$j];
-
-        $saoIguais = $letraIndo == $letraVoltando;
-
-        if (!$saoIguais) {
-            $ehPalindromo = false;
-            break;
-        }
-    }
-    
-    if ($i < $tam) {
-        $ehPalindromo = true;   
-    }
-}
 
 
-if ($ehPalindromo) {
-    echo "O nome $palavra é um palíndromo.";
-}else {
-    echo "A palavra $palavra não é um palíndromo";
-}
 
 
 echo "<br><br>";
@@ -223,7 +192,7 @@ echo "<br>";
 */
 
 $vogais = "aeiou";
-$palavra = "InFoSeRv";
+$palavra = "Luis";
 $palavraMin = strtolower($palavra);
 $tamanhoDaPalavra = strlen($palavra);
 $qtdVogais = 0;
@@ -251,7 +220,7 @@ echo "A palavra $palavra tem $qtdVogais vogais.";
 // 1 descobrir quais são vogais
 
 $vogais = "aeiou";
-$palavra = "InFoSeRv";
+$palavra = "Luis";
 $palavraMin = strtolower($palavra);
 $tamanhoDaPalavra = strlen($palavra);
 $vogaisContadas = [];
