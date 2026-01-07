@@ -191,8 +191,11 @@ echo "<br>";
 *Contar quais vogais existem em uma frase totalizando a quantidade de cada um
 */
 
+echo "<br>";
+echo "<br>";
+
 $vogais = "aeiou";
-$palavra = "Luis";
+$palavra = "paralelepipedo";
 $palavraMin = strtolower($palavra);
 $tamanhoDaPalavra = strlen($palavra);
 $qtdVogais = 0;
@@ -220,7 +223,7 @@ echo "A palavra $palavra tem $qtdVogais vogais.";
 // 1 descobrir quais são vogais
 
 $vogais = "aeiou";
-$palavra = "Luis";
+$palavra = "paralelepipedo";
 $palavraMin = strtolower($palavra);
 $tamanhoDaPalavra = strlen($palavra);
 $vogaisContadas = [];
