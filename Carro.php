@@ -5,7 +5,7 @@
 /**
  * Cracteristicas: Propriendades / Atibutos
  * */
- define("QUEBRA_LINHA", "<br>");
+ define("QUEBRA_LINHAS", "<br>");
 
 
 
@@ -29,15 +29,15 @@ class Carro {
 
     public function ligar($chave){
         if (!$chave){
-            echo "Impossível ligar o carro sem a chave." . QUEBRA_LINHA;
+            echo "Impossível ligar o carro sem a chave." . QUEBRA_LINHAS;
         }
         if (!$this->combustivel){
-            echo "Impossível ligar o carro sem combustível, GAS: $this->combustivel." . QUEBRA_LINHA;
+            echo "Impossível ligar o carro sem combustível, GAS: $this->combustivel." . QUEBRA_LINHAS;
             return;
         }
 
         $this->ligar = true;
-        echo "O carro está ligado" . QUEBRA_LINHA;
+        echo "O carro está ligado" . QUEBRA_LINHAS;
     }
     
     public function desligar(){
