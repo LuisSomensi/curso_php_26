@@ -50,6 +50,9 @@ $objCarro = new Carro();
 $objCarro->marca = "Honda";
 $objCarro->modelo = "Civic";
 $objCarro->ano ="2012";
+
+
+
 $objCarro->modelo = "Preto";
 $objCarro->combustivel = "Gasolina";
 $objCarro->setPlaca("IOP-4321");
