@@ -8,10 +8,10 @@ abstract class PessoaAbstract {
     public $bairro;
     public $cidade;
     public $estado;
-    public $numero;
-    public $complemento;
-    public $pontoReferencia;
+ require_once "./PessoaAbstract.php";
 
+
+define("QUEBRAR_LINHA", "<br>");
     public function resetarPessoa(){
     $this-> nome = "";
     $this-> idade= "";
@@ -33,3 +33,9 @@ public function validarCNPJ($cnpj) {
         echo "123.456.789/0001-11";
     }
 }
+
+
+
+
+
+
