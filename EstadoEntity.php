@@ -4,7 +4,7 @@ require_once "./EntityAbstract.php";
 
 
 class EstadoEntity extends EntityAbstract{
-    public $estado;
+    public $nome;
     public $sigla;
 
     public function __construct()
