@@ -1,5 +1,7 @@
 <?php
 
+
+
 interface EntityInterface {
     public function criar();
     public function obter($id);
@@ -17,19 +19,26 @@ abstract class EntityAbstract implements EntityInterface {
     public$criadoEm;
     public$atualizadoEm;
 
+    public function __construct(BancoDados $banco)
+    {
+        $this->bancoDados = $banco;
+    }
+
     public function criar() {
 
     }
     public function obter($id) {
-
+        $sql = "SELECT * FROM $this->tabelaNome WHERE $id";
     }
     public function obterTodos($filtros = "") {
 
     }
     public function atualizar($id) {
+        $sql = "ALTER TABLE MODIFY $this->tabelaNome WHERE id = $id;";
 
     }
     public function delletar($id) {
-
+        $sql = "DELETE FROM $this->tabelaNome WHERE id = $id;";
     }
 }
+

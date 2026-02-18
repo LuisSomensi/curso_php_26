@@ -1,3 +1,4 @@
+9
 # Tutorial 
 abrir vscode ver se ta logado ubuntu (canto inferior esquerdo) file open folder: seleciona tudo e apaga
 
