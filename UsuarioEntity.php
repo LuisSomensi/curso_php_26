@@ -9,7 +9,7 @@ require_once "./EntityAbstract.php";
     public $status = true;
     public $cadastroPreenchido = false;
 
-    public function __construct(BancoDados $banco)
+    public function __construct(BancoDeDados $banco)
     {
         parent::__construct($banco);
         $this->tabelaNome = "usuario";
